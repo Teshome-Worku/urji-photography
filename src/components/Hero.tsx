@@ -18,10 +18,10 @@ export default function Hero() {
       />
 
       {/* Gentle bottom gradient only — just enough for text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent" />
 
       {/* Thin top fade for navbar readability */}
-      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/20 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-24 bg-linear-to-b from-black/20 to-transparent" />
 
       {/* Large heading — left aligned, vertically centered */}
       <div className="absolute inset-0 flex items-center px-8 sm:px-12 lg:px-20">
@@ -116,7 +116,7 @@ export default function Hero() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-white/30 pt-2"
         >
-          <div className="h-2 w-[2px] rounded-full bg-white/60" />
+          <div className="h-2 w-0.5 rounded-full bg-white/60" />
         </motion.div>
       </motion.div>
     </section>
