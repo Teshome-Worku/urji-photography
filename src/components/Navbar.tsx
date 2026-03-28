@@ -37,12 +37,12 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
           <a
             href="#home"
-            className="font-heading text-2xl font-bold tracking-wider text-accent"
+            className="font-heading text-xl font-bold tracking-wider text-white"
           >
-            URJI
+            Urji<span className="text-accent">.</span>
           </a>
 
           {/* Desktop links */}
@@ -51,7 +51,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="relative text-sm font-medium tracking-wide text-white/80 transition-colors duration-300 hover:text-accent"
+                className="relative text-[13px] font-medium tracking-[0.1em] text-white/70 uppercase transition-colors duration-300 hover:text-white"
               >
                 {link.label}
               </a>
