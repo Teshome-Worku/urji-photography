@@ -31,11 +31,10 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ${
-          scrolled
-            ? "bg-[#0B0B0B]/95 shadow-lg backdrop-blur-md"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ${scrolled
+          ? "bg-[#0B0B0B]/95 shadow-lg backdrop-blur-md"
+          : "bg-transparent"
+          }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
           <a
@@ -51,7 +50,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="relative text-[13px] font-medium tracking-[0.1em] text-white/70 uppercase transition-colors duration-300 hover:text-white"
+                className="relative text-[13px] font-medium tracking-widest text-white/70 uppercase transition-colors duration-300 hover:text-white"
               >
                 {link.label}
               </a>
@@ -65,19 +64,16 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             <span
-              className={`h-[2px] w-6 rounded-full bg-white transition-all duration-300 ${
-                mobileOpen ? "translate-y-[5px] rotate-45" : ""
-              }`}
+              className={`h-0.5 w-6 rounded-full bg-white transition-all duration-300 ${mobileOpen ? "translate-y-1.25 rotate-45" : ""
+                }`}
             />
             <span
-              className={`h-[2px] w-6 rounded-full bg-white transition-all duration-300 ${
-                mobileOpen ? "opacity-0" : ""
-              }`}
+              className={`h-0.5 w-6 rounded-full bg-white transition-all duration-300 ${mobileOpen ? "opacity-0" : ""
+                }`}
             />
             <span
-              className={`h-[2px] w-6 rounded-full bg-white transition-all duration-300 ${
-                mobileOpen ? "-translate-y-[5px] -rotate-45" : ""
-              }`}
+              className={`h-0.5 w-6 rounded-full bg-white transition-all duration-300 ${mobileOpen ? "-translate-y-1.25 -rotate-45" : ""
+                }`}
             />
           </button>
         </div>
