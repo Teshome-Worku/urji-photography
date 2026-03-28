@@ -26,7 +26,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-4 text-sm font-medium tracking-[0.3em] uppercase [text-shadow:_0_1px_8px_rgba(0,0,0,0.5)]"
+          className="mb-4 text-sm font-medium tracking-[0.3em] uppercase [text-shadow:0_1px_8px_rgba(0,0,0,0.5)]"
           style={{ color: "#d4b876" }}
         >
           Professional Photography
@@ -36,7 +36,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-heading text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-8xl [text-shadow:_0_2px_24px_rgba(0,0,0,0.6),_0_1px_4px_rgba(0,0,0,0.4)]"
+          className="font-heading text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-8xl [text-shadow:0_2px_24px_rgba(0,0,0,0.6),0_1px_4px_rgba(0,0,0,0.4)]"
         >
           Urji Photography
         </motion.h1>
@@ -45,7 +45,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-4 text-lg font-light tracking-wide text-white/95 sm:text-xl lg:text-2xl [text-shadow:_0_1px_12px_rgba(0,0,0,0.5)]"
+          className="mt-4 text-lg font-light tracking-wide text-white/95 sm:text-xl lg:text-2xl [text-shadow:0_1px_12px_rgba(0,0,0,0.5)]"
         >
           Capturing Moments That Matter
         </motion.p>
@@ -58,7 +58,7 @@ export default function Hero() {
         >
           <a
             href="#portfolio"
-            className="group relative inline-flex items-center gap-2 rounded-full border-2 px-8 py-3 text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-black [text-shadow:_0_1px_6px_rgba(0,0,0,0.3)]"
+            className="group relative inline-flex items-center gap-2 rounded-full border-2 px-8 py-3 text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-black [text-shadow:0_1px_6px_rgba(0,0,0,0.3)]"
             style={{
               borderColor: "#d4b876",
               color: "#d4b876",
@@ -113,7 +113,7 @@ export default function Hero() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-white/40 pt-2"
         >
-          <div className="h-2 w-[2px] rounded-full bg-white/70" />
+          <div className="h-2 w-0.5 rounded-full bg-white/70" />
         </motion.div>
       </motion.div>
     </section>
